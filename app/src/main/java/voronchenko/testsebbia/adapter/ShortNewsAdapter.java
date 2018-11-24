@@ -54,8 +54,8 @@ public class ShortNewsAdapter extends PagedListAdapter<ShortNews, ShortNewsAdapt
             holder.tvTitle.setText(shortNews.getTitle());
             holder.tvShortNews.setText(shortNews.getShortDescription());
 
-            String newsData = "das";
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS"); //2016-08-25T19:19:19.104Z
+            String newsData = "";
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS"); 
             try {
                 Date date = simpleDateFormat.parse(shortNews.getDate());
                 SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("dd.MM.yyyy");
